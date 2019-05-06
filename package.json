@@ -1,0 +1,22 @@
+{
+  "name": "speedway-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass src/sass/main.scss oist/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/de-alano/speedway-generator.git"
+  },
+  "author": "Alan Dominiczak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/de-alano/speedway-generator/issues"
+  },
+  "homepage": "https://github.com/de-alano/speedway-generator#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

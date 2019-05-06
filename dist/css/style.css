@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(43, 203, 186, 0.9), rgba(15, 185, 177, 0.9)); }
+
+.container {
+  max-width: 135rem;
+  margin: 0 auto;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+  overflow-x: hidden; }
+
+.header {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/bg3.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative; }
+  @media only screen and (max-width: 56.25em) {
+    .header {
+      background-image: url(../images/bg.jpg); } }
+  .header__text {
+    position: absolute;
+    width: 100%;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #d1d8e0;
+    background-color: rgba(75, 101, 132, 0.9);
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    padding: 3rem 0;
+    line-height: 1.8; }
+    @media only screen and (max-width: 56.25em) {
+      .header__text {
+        font-size: 2.5rem;
+        padding: 3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .header__text {
+        font-size: 2rem;
+        padding: 2rem; } }
+
+.generator__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem 0;
+  font-size: 3rem;
+  text-align: center;
+  background-image: linear-gradient(to right, #2bcbba, #0fb9b1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: .3rem;
+  line-height: 1.5; }
+  @media only screen and (max-width: 56.25em) {
+    .generator__title {
+      font-size: 2.2rem;
+      padding: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .generator__title {
+      font-size: 2rem; } }
+
+.generator__btn {
+  text-align: center;
+  display: block;
+  margin: 6rem auto;
+  background-image: linear-gradient(to right bottom, #2bcbba, #0fb9b1);
+  border: none;
+  border-radius: 4rem;
+  padding: 3rem 5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  color: #d1d8e0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  transition: all .2s ease-in;
+  transform: scale(1);
+  outline: none;
+  cursor: pointer; }
+  @media only screen and (max-width: 56.25em) {
+    .generator__btn {
+      color: #ffffff;
+      font-size: 1.5rem;
+      padding: 2.5rem 4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .generator__btn {
+      color: #ffffff;
+      font-size: 1.3rem;
+      padding: 2rem 3rem; } }
+  .generator__btn:hover {
+    color: #ffffff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    transform: scale(1.02); }
+
+.teams {
+  display: flex; }
+  @media only screen and (max-width: 56.25em) {
+    .teams {
+      flex-direction: column; } }
+
+.team {
+  width: 50%; }
+  @media only screen and (max-width: 56.25em) {
+    .team {
+      width: 100%; } }
+  .team__info {
+    padding: 5rem 0 8rem;
+    background-image: linear-gradient(rgba(75, 101, 132, 0.9), rgba(75, 101, 132, 0.95)), url(../images/race.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .team__name {
+    font-size: 3rem;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    color: #d1d8e0;
+    font-weight: bold;
+    padding: 3rem 0; }
+    @media only screen and (max-width: 56.25em) {
+      .team__name {
+        font-size: 2.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .team__name {
+        font-size: 2rem; } }
+  .team__input {
+    display: inline-block;
+    width: 70%;
+    padding: 2rem 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #0fb9b1;
+    text-align: center;
+    font-size: 2.5rem;
+    border: 3px solid transparent;
+    border-radius: 5rem;
+    transition: all .2s ease-in; }
+    @media only screen and (max-width: 75rem) {
+      .team__input {
+        width: 80%; } }
+    @media only screen and (max-width: 56.25em) {
+      .team__input {
+        width: 70%;
+        font-size: 2.2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .team__input {
+        width: 85%;
+        font-size: 2rem;
+        padding: 1rem; } }
+    .team__input:focus {
+      outline: none;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+      border: 3px solid #2bcbba; }
+    .team__input::placeholder {
+      color: rgba(119, 140, 163, 0.3); }
+  .team__riders {
+    padding: 8rem 0;
+    background-color: #dfe6e9; }
+    @media only screen and (max-width: 56.25em) {
+      .team__riders {
+        padding: 5rem 0; } }
+  .team__riders, .team__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+.team__rider {
+  width: 100%; }
+  .team__rider:not(:last-child) {
+    margin-bottom: 1.5rem; }
+  .team__rider__input {
+    display: block;
+    width: 60%;
+    padding: 2rem 3rem;
+    margin: 0 auto;
+    font-size: 2.3rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #4b6584;
+    border: 2px solid #a5b1c2;
+    transition: all .2s ease-in; }
+    @media only screen and (max-width: 75rem) {
+      .team__rider__input {
+        width: 70%; } }
+    @media only screen and (max-width: 56.25em) {
+      .team__rider__input {
+        font-size: 2.2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .team__rider__input {
+        font-size: 2rem; } }
+    .team__rider__input:focus {
+      outline: none;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+      border: 2px solid #0fb9b1; }
+    .team__rider__input::placeholder {
+      color: rgba(119, 140, 163, 0.5);
+      font-size: 2rem; }
+      @media only screen and (max-width: 37.5em) {
+        .team__rider__input::placeholder {
+          font-size: 1.7rem; } }
+  .team__rider__label {
+    font-size: 1.5rem;
+    display: block;
+    color: #0fb9b1;
+    font-weight: bold;
+    margin-top: .8rem;
+    text-align: center;
+    transition: all .3s; }
+  .team__rider__input:placeholder-shown + .team__rider__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem); }
+
+.legal {
+  font-size: 1.3rem;
+  text-align: center;
+  letter-spacing: .2rem;
+  color: #d1d8e0;
+  background-color: rgba(75, 101, 132, 0.95);
+  padding: 2.5rem 0; }
+  .legal .author {
+    color: #2bcbba; }

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Generator Programu Żużlowego</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header__text">Generator Programu Żużlowego</h1>
+        </header>
+
+        <section class="generator">
+            <h2 class="generator__title">Uzupełnij poniższe pola i wygeneruj gotowy program</h2>
+
+
+            <div class="teams">
+                <div class="team">
+                    <div class="team__info team__hosts">
+                        <h3 class="team__name">Gospodarze</h3>
+                        <input type="text" class="team__input" placeholder="Nazwa drużyny" id="hosts">
+                    </div>
+
+                    <div class="team__riders">
+
+                        <div class="team__rider">
+                            <input type="text" class="team__rider__input" id="9" placeholder="Zawodnik z numerem 9"
+                                required>
+                            <label for="9" class="team__rider__label">Zawodnik z numerem 9</label>
+                        </div>
+
+
+                        <div class="team__rider">
+                            <input type="text" class="team__rider__input" id="10" placeholder="Zawodnik z numerem 10"
+                                required>
+                            <label for="10" class="team__rider__label">Zawodnik z numerem 10</label>
+                        </div>
+
+                        <div class="team__rider">
+                            <input type="text" class="team__rider__input" id="11" placeholder="Zawodnik z numerem 11"
+                                required>
+                            <label for="11" class="team__rider__label">Zawodnik z numerem 11</label>
+                        </div>
+
+                        <div class="team__rider">
+                            <input type="text" class="team__rider__input" id="12" placeholder="Zawodnik z numerem 12"
+                                required>
+                            <label for="12" class="team__rider__label">Zawodnik z numerem 12</label>
+                        </div>
+
+                        <div class="team__rider">
+                            <input type="text" class="team__rider__input" id="13" placeholder="Zawodnik z numerem 13"
+                                required>
+                            <label for="13" class="team__rider__label">Zawodnik z numerem 13</label>
+                        </div>
+
+                        <div class="team__rider">
+                            <input type="text" class="team__rider__input" id="14" placeholder="Zawodnik z numerem 14"
+                                required>
+                            <label for="14" class="team__rider__label">Zawodnik z numerem 14</label>
+                        </div>
+
+                        <div class="team__rider">
+                            <input type="text" class="team__rider__input" id="15" placeholder="Zawodnik z numerem 15"
+                                required>
+                            <label for="15" class="team__rider__label">Zawodnik z numerem 15</label>
+                        </div>
+
+                        <div class="team__rider">
+                            <input type="text" class="team__rider__input" id="16" placeholder="Zawodnik z numerem 16"
+                                required>
+                            <label for="16" class="team__rider__label">Zawodnik z numerem 16</label>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="team">
+                    <div class="team__info team__guests">
+                        <h3 class="team__name">Goście</h3>
+                        <input type="text" class="team__input" placeholder="Nazwa drużyny" id="guests" required>
+                    </div>
+
+                    <div class="team__riders">
+
+                        <div class="team__rider">
+                            <input type="text" class="team__rider__input" id="1" placeholder="Zawodnik z numerem 1"
+                                required>
+                            <label for="1" class="team__rider__label">Zawodnik z numerem 1</label>
+                        </div>
+
+                        <div class="team__rider">
+                            <input type="text" class="team__rider__input" id="2" placeholder="Zawodnik z numerem 2"
+                                required>
+                            <label for="2" class="team__rider__label">Zawodnik z numerem 2</label>
+                        </div>
+
+                        <div class="team__rider">
+                            <input type="text" class="team__rider__input" id="3" placeholder="Zawodnik z numerem 3"
+                                required>
+                            <label for="3" class="team__rider__label">Zawodnik z numerem 3</label>
+                        </div>
+
+                        <div class="team__rider">
+                            <input type="text" class="team__rider__input" id="4" placeholder="Zawodnik z numerem 4"
+                                required>
+                            <label for="4" class="team__rider__label">Zawodnik z numerem 4</label>
+                        </div>
+
+                        <div class="team__rider">
+                            <input type="text" class="team__rider__input" id="5" placeholder="Zawodnik z numerem 5"
+                                required>
+                            <label for="5" class="team__rider__label">Zawodnik z numerem 5</label>
+                        </div>
+
+                        <div class="team__rider">
+                            <input type="text" class="team__rider__input" id="6" placeholder="Zawodnik z numerem 6"
+                                required>
+                            <label for="6" class="team__rider__label">Zawodnik z numerem 6</label>
+                        </div>
+
+                        <div class="team__rider">
+                            <input type="text" class="team__rider__input" id="7" placeholder="Zawodnik z numerem 7"
+                                required>
+                            <label for="7" class="team__rider__label">Zawodnik z numerem 7</label>
+                        </div>
+
+                        <div class="team__rider">
+                            <input type="text" class="team__rider__input" id="8" placeholder="Zawodnik z numerem 8"
+                                required>
+                            <label for="8" class="team__rider__label">Zawodnik z numerem 8</label>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="generator__btn">Pobierz program</button>
+
+            <script src="js/lib/xlsx-populate.min.js"></script>
+            <script src="js/main.js"></script>
+
+        </section>
+
+        <footer class="legal">&copy; 2019 by <span class="author">Alan Dominiczak</span>. Wszystkie prawa zastrzeżone.
+        </footer>
+    </div>
+</body>
+
+</html>
